@@ -1,7 +1,8 @@
-import Home from './pages/Home';
-import SignIn from './pages/SignIn';
+import Home from './app/routes/app/Home';
+import SignIn from './app/routes/auth/SignIn';
+import SignUp from './app/routes/auth/SignUp';
 
-import './App.css';
+import './assets/styles/App.css';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -10,8 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
-        {/* Add more routes as needed */}
-        {/* <Route path="/another-page" element={<AnotherPage />} /> */}
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>
   );
