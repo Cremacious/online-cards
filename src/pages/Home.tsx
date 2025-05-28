@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { newDeck } from '../api/deck-of-cards/deck';
+import { Button } from '@/components/ui/button';
 
 const Home = () => {
   type Deck = {
@@ -26,6 +27,7 @@ const Home = () => {
   return (
     <div>
       <h1>Deck of Cards</h1>
+      <Button>Button</Button>
       <pre>{JSON.stringify(deck, null, 2)}</pre>
     </div>
   );
